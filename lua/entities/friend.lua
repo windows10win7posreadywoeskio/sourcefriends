@@ -1,8 +1,10 @@
 AddCSLuaFile()
 
+ENT.PrintName = "frend"
 ENT.Base 			= "base_nextbot"
 
 function ENT:Initialize()
+
 
 	self:SetModel( "models/player/kleiner.mdl" )
 	
@@ -10,7 +12,6 @@ function ENT:Initialize()
 	self.SearchRadius 	= 1000	-- How far to search for enemies
 	
 end
-
 
 function ENT:RunBehaviour()
 

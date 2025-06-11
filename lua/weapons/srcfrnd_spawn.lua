@@ -25,8 +25,8 @@ SWEP.WorldModel = "models/weapons/w_pistol.mdl"
 
 function SWEP:Initialize()
     self:SetHoldType("pistol")
+    self.entname = "friend"
 end
-
 function SWEP:PrimaryAttack()
     if CLIENT then return end
 
@@ -43,6 +43,7 @@ function SWEP:PrimaryAttack()
     self:SendWeaponAnim(ACT_VM_PRIMARYATTACK)
     ent:SetPos(pos)
     ent:Spawn()
+    
     ent:Activate()
     --ent:SetModel("models/player/kleiner.mdl")
     ent:SetName("frend")
