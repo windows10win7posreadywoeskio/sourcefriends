@@ -37,7 +37,7 @@ function SWEP:PrimaryAttack()
     local ent = ents.Create("friend")
     if not IsValid(ent) then return end
 
-    ent:EmitSound("hl1/fvox/bell.wav", 75, 50)
+    ent:EmitSound("hl1/fvox/bell.wav", 100, 50)
 
     owner:SetAnimation(PLAYER_ATTACK1)
     self:SendWeaponAnim(ACT_VM_PRIMARYATTACK)
